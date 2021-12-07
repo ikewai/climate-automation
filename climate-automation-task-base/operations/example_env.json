@@ -1,0 +1,28 @@
+{
+    "core": {
+        "logging_address": "someone@hawaii.edu",
+        "validate_tasks": false
+    },
+
+    "tacc_credentials": {
+        "api_url": "https://tacc.tapis.io",
+        "client_name": "climate-automation"
+    },
+
+    "ikewai_credentials": {
+        "api_url": "https://ikewai.its.hawaii.edu",
+        "client_name": "climate-automation",
+        "access_token": "asdfasdf",
+        "access_token_expiration": "2021-12-07T03:25:06.490925+00:00",
+        "refresh_token": "12341234"
+    },
+
+    "tasks": [
+        {
+            "actor_id": "climate-automation-task-rainfall-aggregation-nws",
+            "allowed_to_fail": false,
+            "timeout": 3600
+        }
+    ],
+    "index": 0
+}
