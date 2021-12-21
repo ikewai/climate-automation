@@ -2,7 +2,7 @@
 # It should be used as the base for any rainfall aggregation task.
 # Build time (workstation): 25-35 minutes
 
-FROM ikewai/climate-automation-task-base:indev
+FROM ikewai/climate-automation-task-base
 
 # Refresh OS package catalog.
 RUN apt update
