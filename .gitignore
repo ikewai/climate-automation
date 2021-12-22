@@ -1,1 +1,3 @@
 climate-automation-task-base/.vscode/settings.json
+build-everything.ps1
+push-everything.ps1
