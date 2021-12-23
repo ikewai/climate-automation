@@ -18,3 +18,9 @@ RUN python3 -m pip install pyproj
 RUN python3 -m pip install statsmodels
 RUN python3 -m pip install scipy
 RUN python3 -m pip install scikit-learn
+
+WORKDIR /docker-build
+
+COPY ./preliminary_dirs.txt .
+
+RUN /bin/bash -c 'while read line; do mkdir -p "${line%/*}"; done < preliminary_dirs.txt'
