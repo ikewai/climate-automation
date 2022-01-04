@@ -8,3 +8,4 @@ RUN apt install -y wget
 RUN python3 -m pip install tapipy
 
 COPY ./actor/ actor/
+COPY ./docker-build/ docker-build/
