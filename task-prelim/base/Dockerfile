@@ -20,5 +20,6 @@ RUN python3 -m pip install scipy
 RUN python3 -m pip install scikit-learn
 
 COPY ./preliminary_dirs.json /docker-build/
+# RUN wget [[preliminary dirs in the repo]]
 
 #RUN python3 json2mkdir.py preliminary_dirs.json

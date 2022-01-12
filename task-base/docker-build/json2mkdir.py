@@ -12,10 +12,10 @@ elif str(sys.argv[0]) == "":
     exit(1)
 
 # Take arg 0 as the json file to read
-list_of_dirs_file_name = str(sys.argv[0])
+dirs_file_name = str(sys.argv[0])
 
-with open(list_of_dirs_file_name) as list_of_dirs_file:
-    list_of_dirs = json.loads(list_of_dirs_file.read())
+with open(dirs_file_name) as dirs_file:
+    dirs: list = json.loads(dirs_file.read())
 
-for dir in list_of_dirs:
+for dir in dirs:
     subprocess.run("/bin/bash", "-c", f"mkdir {dir}")
