@@ -10,4 +10,4 @@ The token is input in the form of the `$IKEWAI_TOKEN` environment variable.
 In Abaco it is brought in by means of the `default_environment` property when registering the actor.
 
 Outputs:
-* `importData` POST to Ike Wai Gateway, 1 file (approx. 100 MB)
+* `importData` POST to Ike Wai Gateway, to import 1 file (approx. 100 MB)
