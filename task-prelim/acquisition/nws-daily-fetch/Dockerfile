@@ -1,4 +1,4 @@
-FROM ikewai/cat-prelim-rainfall-aq
+FROM ikewai/cat-prelim-aq
 
 WORKDIR /actor
 
