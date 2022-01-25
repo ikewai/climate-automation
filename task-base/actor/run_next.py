@@ -15,7 +15,7 @@ msg['index'] += 1
 # Construct new Tapis object capable of sending a message to an actor
 t = Tapis(
     base_url = os.environ['_abaco_api_server'],
-    client_id = msg['tacc-credentials']['client_name'],
+    client_id = msg['tacc_credentials']['client_name'],
     access_token = os.environ['_abaco_access_token']
 )
 

@@ -55,3 +55,5 @@ RUN R -e 'install.packages(c("dplyr"))'
 WORKDIR /sync
 
 RUN wget https://raw.githubusercontent.com/ikewai/data-uploader/main/upload.py
+
+COPY upload_auth_injector.py .

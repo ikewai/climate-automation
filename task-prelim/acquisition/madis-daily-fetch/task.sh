@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "[task.sh] Hello World! Ready to get today's hourly NWS data."
+echo "[task.sh] Hello World! Ready to get today's MADIS data."
 
 # Execute Collection of MADIS Data
 cd /home/hawaii_climate_products_container/preliminary/data_aqs/code/madis
