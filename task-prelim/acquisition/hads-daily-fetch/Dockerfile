@@ -1,7 +1,9 @@
 FROM ikewai/cat-prelim-aq
 
-WORKDIR /actor
+WORKDIR /sync
+COPY ./upload_config.json .
 
+WORKDIR /actor
 COPY ./task.sh .
 
 CMD [ "/bin/bash", "/actor/task.sh" ]

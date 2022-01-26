@@ -12,8 +12,8 @@
     },
     "upload": [
         {
-            "local_path": "/home/hawaii_climate_products_container/preliminary/data_aqs/data_outputs/hads/parse",
-            "remote_path": "HCDP/workflow_data/preliminary/data_aqs/data_outputs/hads/parse",
+            "local_path": "/home/hawaii_climate_products_container/preliminary/data_aqs/data_outputs/nws_rr5/parse",
+            "remote_path": "HCDP/workflow_data/preliminary/data_aqs/data_outputs/nws_rr5/parse",
             "system_id": "ikewai-annotated-data",
             "dir_permissions": [
                 {
@@ -24,8 +24,8 @@
             ]
         },
         {
-            "local_path": "/home/hawaii_climate_products_container/preliminary/data_aqs/data_outputs/hads/raw",
-            "remote_path": "HCDP/workflow_data/preliminary/data_aqs/data_outputs/hads/raw",
+            "local_path": "/home/hawaii_climate_products_container/preliminary/data_aqs/data_outputs/nws_rr5/raw",
+            "remote_path": "HCDP/workflow_data/preliminary/data_aqs/data_outputs/nws_rr5/raw",
             "system_id": "ikewai-annotated-data",
             "dir_permissions": [
                 {
