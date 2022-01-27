@@ -13,7 +13,7 @@ elif str(sys.argv[1]) == "":
 # Take arg 1 as the upload config file
 config_file_name = str(sys.argv[1])
 print(f"Adding auth variables to {config_file_name}!")
-with open(config_file_name, "rw") as config_file:
+with open(config_file_name, "r") as config_file:
     upload_config: dict = json.loads(config_file.read())
 
 # Inject auth variables from directly named environment variables if local,
@@ -33,4 +33,5 @@ else:
 # then, write the changes to file
 config_to_write = json.dumps(upload_config)
 
-config_file.write(config_to_write)
+with open(config_file_name, "w") as config_file:
+    config_file.write(config_to_write)
