@@ -7,7 +7,7 @@ python3 mesonet_24hr_fetch_dev.py
 python3 hfmetar_24hr_fetch_dev.py
 
 # Upload the collected data
-python3 /sync/upload_auth_injector.py /sync/upload_config.json
+python3 /sync/upload_auth_injector.py /sync/config.json
 python3 /sync/upload.py
 
 echo "[task.sh] All done! Moving on to the next step if there is one."
