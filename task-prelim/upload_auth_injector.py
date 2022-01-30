@@ -18,7 +18,7 @@ with open(config_file_name, "r") as config_file:
 
 # Inject auth variables from directly named environment variables if local,
 # or from the Abaco msg if on Abaco.
-if os.environ['NOT_ABACO'] == "TRUE":
+if os.environ['_abaco_actor_id'] == "NOT_ABACO":
     upload_config['agave_options']['username'] = os.environ['IW_USERNAME']
     upload_config['agave_options']['password'] = os.environ['IW_PASSWORD']
     upload_config['agave_options']['api_key'] = os.environ['IW_API_KEY']
