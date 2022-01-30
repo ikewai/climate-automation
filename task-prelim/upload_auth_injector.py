@@ -25,10 +25,10 @@ if os.environ['_abaco_actor_id'] == "NOT_ABACO":
     upload_config['agave_options']['api_secret'] = os.environ['IW_API_SECRET']
 else:
     msg: dict = json.loads(os.environ["MSG"])
-    upload_config['agave_options']['username'] = os.environ['MSG']['iw_credentials']['username']
-    upload_config['agave_options']['password'] = os.environ['MSG']['iw_credentials']['password']
-    upload_config['agave_options']['api_key'] = os.environ['MSG']['iw_credentials']['client_name']
-    upload_config['agave_options']['api_secret'] = os.environ['MSG']['iw_credentials']['api_secret']
+    upload_config['agave_options']['username'] = msg['iw_credentials']['username']
+    upload_config['agave_options']['password'] = msg['iw_credentials']['password']
+    upload_config['agave_options']['api_key'] = msg['iw_credentials']['client_name']
+    upload_config['agave_options']['api_secret'] = msg['iw_credentials']['api_secret']
 
 # then, write the changes to file
 config_to_write = json.dumps(upload_config)
