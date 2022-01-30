@@ -1,6 +1,6 @@
 #!/bin/python3
 
-import os, sys, subprocess, json
+import os, sys, json
 # Currently a prototype, needs to be improved for robustness
 
 if sys.argv[1] == None:
@@ -16,19 +16,14 @@ print(f"Adding auth variables to {config_file_name}!")
 with open(config_file_name, "r") as config_file:
     upload_config: dict = json.loads(config_file.read())
 
-# Inject auth variables from directly named environment variables if local,
-# or from the Abaco msg if on Abaco.
-if os.environ['_abaco_actor_id'] == "NOT_ABACO":
-    upload_config['agave_options']['username'] = os.environ['IW_USERNAME']
-    upload_config['agave_options']['password'] = os.environ['IW_PASSWORD']
-    upload_config['agave_options']['api_key'] = os.environ['IW_API_KEY']
-    upload_config['agave_options']['api_secret'] = os.environ['IW_API_SECRET']
-else:
-    msg: dict = json.loads(os.environ["MSG"])
-    upload_config['agave_options']['username'] = msg['iw_credentials']['username']
-    upload_config['agave_options']['password'] = msg['iw_credentials']['password']
-    upload_config['agave_options']['api_key'] = msg['iw_credentials']['client_name']
-    upload_config['agave_options']['api_secret'] = msg['iw_credentials']['api_secret']
+# Inject auth variables from directly named environment variables.
+# These are either set in the .env file during local-server testing or in
+# default_environment when calling createActor().
+upload_config['agave_options']['username'] = os.environ['IW_USERNAME']
+upload_config['agave_options']['password'] = os.environ['IW_PASSWORD']
+upload_config['agave_options']['api_key'] = os.environ['IW_API_KEY']
+upload_config['agave_options']['api_secret'] = os.environ['IW_API_SECRET']
+
 
 # then, write the changes to file
 config_to_write = json.dumps(upload_config)
