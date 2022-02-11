@@ -1,5 +1,5 @@
 {
-    "base_url": "https://raw.githubusercontent.com/ikewai/hawaii_climate_products_container/main/preliminary/air_temp/code/",
+    "base_url": "https://raw.githubusercontent.com/ikewai/hawaii_climate_products_container/main/preliminary/air_temp/daily/code/",
     "placement_url": "/home/hawaii_climate_products_container/preliminary/air_temp/daily/code",
     "scripts": [
         "Temp_linear.py",
