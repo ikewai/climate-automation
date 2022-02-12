@@ -4,7 +4,7 @@ WORKDIR /docker-build
 COPY dir_manifest.json .
 COPY script_manifest.json .
 ## temp fix
-RUN mkdir -p "/home/hawaii_climate_products_container/preliminary/data_aqs/code"
+RUN mkdir -p "/home/hawaii_climate_products_container/preliminary/air_temp/daily/code"
 ##
 RUN /bin/python3 json2mkdir.py dir_manifest.json
 RUN /bin/python3 json2wget.py script_manifest.json
