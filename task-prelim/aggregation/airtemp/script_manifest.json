@@ -2,18 +2,10 @@
     "base_url": "https://raw.githubusercontent.com/ikewai/hawaii_climate_products_container/main/preliminary/air_temp/daily/code/",
     "placement_url": "/home/hawaii_climate_products_container/preliminary/air_temp/daily/code",
     "scripts": [
-        "Temp_linear.py",
-        "air_temp_aggregate_wrapper.py",
-        "county_map_wrapper.py",
-        "cross_validate_temp.py",
-        "daily_temp_agg.sh",
-        "daily_temp_map_batch.py",
-        "daily_temp_mean_batch.py",
-        "hads_temp_parse.py",
-        "madis_temp_parse.py",
-        "meta_data_wrapper.py",
-        "state_wrapper.py",
-        "temp_aggregate_input.py",
-        "temp_state_aggregate.py"
+        "air_temp_aggregate_wrapper.py", 
+        "hads_temp_parse.py", 
+        "madis_temp_parse.py", 
+        "temp_aggregate_input.py", 
+        "temp_agg_wget.py" 
     ]
 }
