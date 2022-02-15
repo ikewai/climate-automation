@@ -3,6 +3,7 @@
     "placement_url": "/home/hawaii_climate_products_container/preliminary/air_temp/daily/code",
     "scripts": [
         "air_temp_aggregate_wrapper.py", 
+        "daily_temp_agg.sh",
         "hads_temp_parse.py", 
         "madis_temp_parse.py", 
         "temp_aggregate_input.py", 
