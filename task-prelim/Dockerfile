@@ -57,3 +57,4 @@ WORKDIR /sync
 RUN wget https://raw.githubusercontent.com/ikewai/data-uploader/main/upload.py
 
 COPY upload_auth_injector.py .
+COPY update_date_string_in_config.py .
