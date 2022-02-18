@@ -17,3 +17,6 @@ COPY ./upload_list_inserter.py upload_list_inserter.py
 
 # Copy upload config template from build context
 COPY ./upload_config.json config.json
+
+WORKDIR /actor
+COPY task.sh .
