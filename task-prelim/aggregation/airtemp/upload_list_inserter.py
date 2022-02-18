@@ -17,7 +17,7 @@ dir_permissions = [
 
 # inject dir_permissions
 for upload_dir in upload_config['upload']:
-    upload_dir.update(dir_permissions)
+    upload_dir['dir_permissions'] = dir_permissions
 
 # load config file to place the new upload list into
 fin = open(sys.argv[2], "rt")
