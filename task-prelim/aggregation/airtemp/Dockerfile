@@ -4,7 +4,12 @@ WORKDIR /docker-build
 COPY dir_manifest.json .
 COPY script_manifest.json .
 
-RUN /bin/python3 json2mkdir.py dir_manifest.json
+
+# Get Directory list
+RUN wget https://raw.githubusercontent.com/ikewai/hawaii_climate_products_container/main/preliminary/air_temp/daily/docs/currentDirs.txt
+
+# Make directories and download scripts
+RUN /bin/python3 txt2mkdir.py currentDirs.txt
 RUN /bin/python3 json2wget.py script_manifest.json
 
 WORKDIR /sync
