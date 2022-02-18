@@ -26,7 +26,7 @@ fin.close()
 
 full_upload_config = json.loads(fin_string)
 
-full_upload_config['upload'] = upload_config
+full_upload_config['upload'] = upload_config['upload']
 
 # write the new config
 fout = open(sys.argv[2], "wt")
