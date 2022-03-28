@@ -48,7 +48,7 @@ RUN R -e 'install.packages(c("Metrics"))'
 RUN R -e 'install.packages(c("rgdal"))'
 RUN R -e 'install.packages(c("geosphere"))'
 RUN R -e 'install.packages(c("data.table"))'
-RUN R -e 'install.packages(c("randomForest"))'
+RUN R -e 'install.packages("https://cran.r-project.org/src/contrib/Archive/randomForest/randomForest_4.6-14.tar.gz", repos=NULL, type="source")'
 RUN R -e 'install.packages(c("caret"))'
 RUN R -e 'install.packages(c("dplyr"))'
 
