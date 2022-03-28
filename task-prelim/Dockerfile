@@ -32,7 +32,6 @@ RUN python3 -m pip install pathlib
 RUN python3 -m pip install xarray
 RUN R -e 'install.packages("ggplot2")'
 RUN R -e 'install.packages("xts")'
-RUN R -e 'install.packages("RNRCS")'
 RUN R -e 'install.packages("metScanR")'
 RUN R -e 'install.packages("lubridate")'
 RUN R -e 'install.packages("plyr")'
@@ -51,6 +50,7 @@ RUN R -e 'install.packages("data.table")'
 RUN R -e 'install.packages("https://cran.r-project.org/src/contrib/Archive/randomForest/randomForest_4.6-14.tar.gz", repos=NULL, type="source")'
 RUN R -e 'install.packages("caret")'
 RUN R -e 'install.packages("dplyr")'
+RUN R -e 'install.packages("matrixStats")'
 
 WORKDIR /sync
 
