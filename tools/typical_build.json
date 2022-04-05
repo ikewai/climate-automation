@@ -1,0 +1,30 @@
+[
+    {
+        "build_name": "ikewai/cat-base",
+        "build_dir": "/home/mdodge/climate-automation/task-base",
+        "gh_repos": [
+            {
+                "nickname": "ca",
+                "repo": "ikewai/climate-automation"
+            },
+            {
+                "nickname": "hcpc",
+                "repo": "ikewai/hawaii_climate_products_container"
+            }
+        ]
+    },
+    {
+        "build_name": "ikewai/cat-pre",
+        "build_dir": "/home/mdodge/climate-automation/task-prelim",
+        "gh_repos": [
+            {
+                "nickname": "ca",
+                "repo": "ikewai/climate-automation"
+            },
+            {
+                "nickname": "hcpc",
+                "repo": "ikewai/hawaii_climate_products_container"
+            }
+        ]
+    }
+]
