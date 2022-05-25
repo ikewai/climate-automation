@@ -15,3 +15,6 @@ RUN /bin/python3 json2wget.py sh_script_manifest.json
 
 WORKDIR /sync
 COPY ./upload_config.json config.json
+
+WORKDIR /actor
+COPY task.sh .
