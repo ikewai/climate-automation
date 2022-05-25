@@ -1,8 +1,9 @@
 FROM ikewai/cat-prelim-agg
 
 WORKDIR /docker-build
-COPY dir_manifest.json .
-COPY script_manifest.json .
+COPY txt2mkdir_rainfall.py .
+COPY r_script_manifest.json .
+COPY sh_script_manifest.json .
 
 # Get Directory list
 RUN wget https://raw.githubusercontent.com/ikewai/hawaii_climate_products_container/main/preliminary/rainfall/docs/daily/currentDirs.txt
