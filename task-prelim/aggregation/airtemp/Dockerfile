@@ -1,4 +1,4 @@
-FROM ikewai/cat-prelim-agg
+FROM ikewai/cat-pre-agg
 
 WORKDIR /docker-build
 COPY txt2mkdir_airtemp.py .
