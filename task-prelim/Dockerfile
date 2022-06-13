@@ -1,4 +1,4 @@
-FROM ikewai/cat-base
+FROM ikewai/task-base
 
 # Important note: This base container relies on the concept that all
 # preliminary workflows don't have version conflicts with their dependencies.

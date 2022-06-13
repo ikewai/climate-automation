@@ -16,7 +16,7 @@ for container in container_list:
     build_dir: str = container["build_dir"]
     tag: str = ""
     for gh_repo in container["gh_repos"]:
-        tag = f'{tag}_{gh_repo["nickname"]}.{gh_repo["repo"]}' # Tag naming scheme
+        tag = f'{tag}_{gh_repo["nickname"]}.{gh_repo["repo"]}' # Tag naming scheme "gh_repo["repo"]" needs to be replaced with the hash.
     
     command: str = f"./build_container.sh {build_name}:{tag} {build_dir} {log_dir}" # Pass arguments to build_container.sh
     subprocess.run("/bin/bash", "-c", command)

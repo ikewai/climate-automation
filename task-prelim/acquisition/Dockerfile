@@ -1,4 +1,4 @@
-FROM ikewai/cat-prelim
+FROM ikewai/task-prelim
 
 WORKDIR /docker-build
 

@@ -1,4 +1,4 @@
-FROM ikewai/cat-pre-agg
+FROM ikewai/task-pre-agg
 
 WORKDIR /docker-build
 COPY txt2mkdir_rainfall.py .
