@@ -1,0 +1,7 @@
+{
+    "base_url": "https://raw.githubusercontent.com/ikewai/hawaii_climate_products_container/main/preliminary/rainfall/code/daily/",
+    "placement_url": "/home/hawaii_climate_products_container/preliminary/rainfall/code/daily",
+    "scripts": [
+        "example.R"
+    ]
+}
