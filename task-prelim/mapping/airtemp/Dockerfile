@@ -1,4 +1,4 @@
-FROM ikewai/task-pre-agg
+FROM ikewai/task-pre-map
 
 WORKDIR /docker-build
 COPY txt2mkdir_airtemp.py .
@@ -24,4 +24,3 @@ COPY ./upload_config.json config.json
 
 WORKDIR /actor
 COPY task.sh .
-RUN chmod +x task.sh

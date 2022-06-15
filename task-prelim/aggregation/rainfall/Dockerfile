@@ -18,3 +18,4 @@ COPY ./upload_config.json config.json
 
 WORKDIR /actor
 COPY task.sh .
+RUN chmod +x task.sh
