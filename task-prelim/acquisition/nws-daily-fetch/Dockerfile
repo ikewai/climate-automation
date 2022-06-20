@@ -1,4 +1,4 @@
-FROM ikewai/task-prelim-aq
+FROM ikewai/task-pre-aq
 
 WORKDIR /sync
 COPY ./upload_config.json config.json

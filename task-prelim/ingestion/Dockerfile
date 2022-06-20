@@ -1,4 +1,4 @@
-FROM ikewai/task-base
+FROM ikewai/task
 
 RUN apt update
 ENV DEBIAN_FRONTEND=noninteractive
