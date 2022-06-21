@@ -2,6 +2,8 @@
     "base_url": "https://raw.githubusercontent.com/ikewai/hawaii_climate_products_container/main/preliminary/rainfall/code/monthly/",
     "placement_url": "/home/hawaii_climate_products_container/preliminary/rainfall/code/monthly",
     "scripts": [
-        "example.R"
+        "custom_krige_class_fix_functions_final.R",
+        "daily_to_monthly_agg_FINAL.R",
+        "monthly_rf_krig_map_makr_FINAL.R"
     ]
 }
