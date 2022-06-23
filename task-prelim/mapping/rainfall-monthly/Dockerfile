@@ -1,7 +1,7 @@
 FROM ikewai/task-pre-map
 
 WORKDIR /docker-build
-COPY txt2mkdir_airtemp.py .
+COPY txt2mkdir_rainfall.py .
 COPY script_manifest.json .
 
 # Get Directory list
