@@ -17,10 +17,10 @@ WORKDIR /sync
 RUN wget https://raw.githubusercontent.com/ikewai/hawaii_climate_products_container/main/preliminary/rainfall/docs/monthly/upload_config.json
 
 # Copy json "upload" value inserter
-COPY ./upload_list_inserter.py upload_list_inserter.py
+#COPY ./upload_list_inserter.py upload_list_inserter.py
 
 # Copy upload config template from build context
-COPY ./upload_config.json config.json
+#COPY ./upload_config.json config.json
 
 WORKDIR /actor
 COPY task.sh .
