@@ -1,6 +1,8 @@
 #!/bin/bash
 echo "[task.sh] Hello World! Ready to map daily Airtemp Data."
 
+alias python="python3"
+
 # Run the mapping workflow
 cd /home/hawaii_climate_products_container/preliminary/air_temp/daily/code
 
