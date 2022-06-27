@@ -10,8 +10,6 @@ RUN wget https://raw.githubusercontent.com/ikewai/hawaii_climate_products_contai
 # Make directories and download scripts
 RUN /bin/python3 txt2mkdir_airtemp.py currentDirs.txt
 RUN /bin/python3 json2wget.py script_manifest.json
-RUN chmod +x /home/hawaii_climate_products_container/preliminary/air_temp/daily/code/daily_temp_map.sh
-RUN alias python='python3'
 
 WORKDIR /sync
 

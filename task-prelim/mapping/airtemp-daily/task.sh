@@ -1,12 +1,18 @@
 #!/bin/bash
 echo "[task.sh] Hello World! Ready to map daily Airtemp Data."
 
-alias python="python3"
-
 # Run the mapping workflow
 cd /home/hawaii_climate_products_container/preliminary/air_temp/daily/code
 
-/bin/bash -c /home/hawaii_climate_products_container/preliminary/air_temp/daily/code/daily_temp_map.sh > /home/hawaii_climate_products_container/preliminary/air_temp/daily/code/temp_map.out 2> /home/hawaii_climate_products_container/preliminary/air_temp/daily/code/temp_map.err
+python3 -W ignore /home/hawaii_climate_products_container/preliminary/air_temp/daily/code/temp_map_wget.py
+
+python3 -W ignore /home/hawaii_climate_products_container/preliminary/air_temp/daily/code/update_predictor_table.py
+
+python3 -W ignore /home/hawaii_climate_products_container/preliminary/air_temp/daily/code/county_map_wrapper.py
+
+python3 -W ignore /home/hawaii_climate_products_container/preliminary/air_temp/daily/code/meta_data_wrapper.py
+
+python3 -W ignore /home/hawaii_climate_products_container/preliminary/air_temp/daily/code/state_wrapper.py
 
 # Upload the aggregated data (temporarily disabled)
 cd /sync
