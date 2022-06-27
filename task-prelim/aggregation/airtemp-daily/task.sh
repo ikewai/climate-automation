@@ -12,7 +12,7 @@ python3 -W ignore /home/hawaii_climate_products_container/preliminary/air_temp/d
 
 python3 -W ignore /home/hawaii_climate_products_container/preliminary/air_temp/daily/code/air_temp_aggregate_wrapper.py
 
-# Upload the aggregated data TEMPORARILY DISABLED
+# Upload the aggregated data
 cd /sync
 python3 update_date_string_in_config.py upload_config.json upload_config_datestrings_loaded.json
 python3 upload_list_inserter.py upload_config_datestrings_loaded.json config.json
