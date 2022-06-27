@@ -6,7 +6,7 @@ cd /home/hawaii_climate_products_container/preliminary/rainfall/code/monthly
 Rscript daily_to_monthly_agg_FINAL.R
 Rscript monthly_rf_krig_map_makr_FINAL.R
 
-# Upload the maps TEMPORARILY DISABLED
+# Upload the maps (temporarily disabled for testing)
 cd /sync
 python3 update_date_string_in_config.py upload_config.json upload_config_datestrings_loaded.json
 python3 upload_list_inserter.py upload_config_datestrings_loaded.json config.json
