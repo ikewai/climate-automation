@@ -13,7 +13,7 @@ python3 -W ignore /home/hawaii_climate_products_container/preliminary/air_temp/d
 python3 -W ignore /home/hawaii_climate_products_container/preliminary/air_temp/daily/code/air_temp_aggregate_wrapper.py
 
 # Run the mapping workflow
-cd /home/hawaii_climate_products_container/preliminary/air_temp/daily/code
+cd /home/hawaii_climate_products_container/preliminary/air_temp/daily/
 
 python3 -W ignore /home/hawaii_climate_products_container/preliminary/air_temp/daily/code/temp_map_wget.py
 
